@@ -35,11 +35,11 @@ def execute(bytecode):
             stack.append(value)
             print(f"  read_value from [{address}] = {value}")
 
-        elif opcode == 16:  # write_value
+        elif opcode == 16:  # write_value - ИСПРАВЛЕНО!
             # Извлекаем смещение (биты 6-17)
             offset = (command_int >> 6) & mask(12)
-            value = stack.pop()
-            address = stack.pop()
+            value = stack.pop()  # Сначала значение
+            address = stack.pop()  # Потом адрес
             memory[address + offset] = value
             print(f"  write_value {value} to [{address} + {offset}]")
 
