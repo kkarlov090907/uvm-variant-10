@@ -1,0 +1,9 @@
+load_const;0
+load_const;100
+write_value;0
+load_const;1
+load_const;50
+write_value;0
+load_const;2
+load_const;25
+write_value;0
