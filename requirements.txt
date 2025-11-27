@@ -1,0 +1,3 @@
+textual==0.86.2
+textual-serve==1.1.3
+textual-dev==1.8.0
